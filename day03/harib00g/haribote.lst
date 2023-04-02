@@ -1,0 +1,7 @@
+     1                                          ORG 0Xc200
+     2 0000C200 B0 13                           MOV AL,0x13
+     3 0000C202 B4 00                           MOV AH,0x00
+     4 0000C204 CD 10                           INT 0x10
+     5 0000C206                                 fin:
+     6 0000C206 F4                                  HLT
+     7 0000C207 EB FD                               JMP fin
