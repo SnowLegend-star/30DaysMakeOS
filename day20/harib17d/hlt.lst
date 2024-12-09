@@ -1,0 +1,6 @@
+     1 00000000                                 [BITS 32]
+     2 00000000 B0 48                               MOV AL,'H'
+     3 00000002 9A 00000CD1 0010                    CALL 2*8:0xcd1          ;在bootpack.map里面可以看到 0x00000CD1:_asm_console_putchar
+     4 00000009 B0 69                               MOV AL,'i'
+     5 0000000B 9A 00000BE8 0010                    CALL 2*8:0xbe8
+     6 00000012 CB                                  RETF
